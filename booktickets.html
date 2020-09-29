@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>WhiteClouds - Flight Bookings</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><img src="cloud2.png" width="50" height="30" alt=""
+                loading="lazy">WhiteClouds</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Trending <span class="badge badge-danger">New</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" target="_blank" href="http://www.backpackerbanter.com/blog/">Travel
+                            Blog</a>
+                        <a class="dropdown-item" target="_blank"
+                            href="https://timesofindia.indiatimes.com/life-style/health-fitness/health-news/coronavirus-vaccine-from-covaxin-to-russian-vaccine-roll-out-here-are-all-the-updates-regarding-covid-19-vaccine-development/photostory/78362614.cms">Pandemic
+                            News</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" target="_blank"
+                            href="https://www.healthline.com/nutrition/27-health-and-nutrition-tips">Health Care
+                            Tips</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="booktickets.html">Book Tickets</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faqs.html">FAQs <span class="badge badge-warning">?</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+                <button class="btn btn-danger" data-toggle="modal" data-target="#LoginModal">Login</button>
+                <button class="btn btn-danger" data-toggle="modal" data-target="#SignUpModal">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <form>
+            <h5>Enter your information</h5>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col">
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="Age">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="Phone">
+                </div>
+            </div>
+            <br>
+            <label class="my-2 mr-2" for="inlineFormCustomSelectPref">Gender</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelectPref">
+                <option value="1">Male</option>
+                <option value="2">Female</option>
+                <option value="3">Other</option>
+            </select>
+            <br><br>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Country</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupFileAddon01">Upload ID proof</span>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="inputGroupFile01"
+                            aria-describedby="inputGroupFileAddon01">
+                        <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="customControlInline">
+                <label class="custom-control-label" for="customControlInline">Remember my preference</label>
+            </div>
+            <br>
+            <br>
+            <h5 class="my-2">Enter Flight details</h5>
+            <div class="form-row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="To">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="From">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Departure">
+                </div>
+                <div class="col">
+
+                    <h6 class="dropdown-header">Select Travel Class</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                            value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Economy
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Business
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                            value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            First Class
+                        </label>
+                    </div>
+                </div>
+                <div class="container">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="inputPassword6">No. of Tickets</label>
+                            <input type="text" id="inputPassword6" class="form-control"
+                                aria-describedby="passwordHelpInline">
+                            <small id="passwordHelpInline" class="text-muted">
+                                Enter number of total individuals
+                            </small>
+                        </div>
+                    </form>
+                </div>
+                <div class="container">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="inputPassword6">No. of Children</label>
+                            <input type="text" id="inputPassword6" class="form-control mx-sm-3"
+                                aria-describedby="passwordHelpInline">
+                            <small id="passwordHelpInline" class="text-muted">
+                                Enter number of total children. below age of 13
+                            </small>
+                        </div>
+                    </form>
+                </div>
+                <div class="btn-group my-4">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        View and Select among the available Flights
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button"></button>
+                        <button class="dropdown-item" type="button"></button>
+                        <button class="dropdown-item" type="button"></button>
+                    </div>
+                    <input class="form-control" type="text" placeholder="Total cost of tickets" readonly>
+                </div>
+                
+                <div class="container my-4">
+                    <h5>Payment</h5>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Select your type of payment
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Net Banking</a>
+                            <a class="dropdown-item" href="#">Debit Card</a>
+                            <a class="dropdown-item" href="#">Credit Card</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Wallet</a>
+                            <a class="dropdown-item" href="#">UPI payment</a>
+                        </div>
+
+                    </div>
+                    <button type="button" class="btn btn-primary btn-lg btn-block my-5">Book Tickets</button>
+                </div>
+        </form>
+    </div>
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>© 2010-2020 WhiteClouds, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
